@@ -25,7 +25,7 @@ jobs:
         bash ./build.sh
     - name: test_env_setup
       run: |
-        sudo install qemu qemu-user
+        sudo apt install qemu qemu-user
     - name: test
       run: |
         bash ./exec.sh
