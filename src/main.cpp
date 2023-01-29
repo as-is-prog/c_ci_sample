@@ -1,10 +1,7 @@
 #include <iostream>
 #include <gtest/gtest.h>
+#include <limits.h>
 
-// int main(int, char**) {
-//     std::cout << "Hello, world!\n";
-// }
-
-TEST(HelloTest, test) {
-    EXPECT_EQ(1, 1);
+TEST(LongLimitTest, Maximum) {
+    EXPECT_EQ(LONG_MAX, 2147483647);
 }
