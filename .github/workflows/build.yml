@@ -14,7 +14,7 @@ jobs:
         sudo apt install g++-arm-linux-gnueabihf
     - name: build_arm
       run: |
-        bash ./build_native.sh
+        bash ./build_arm.sh
     - name: test_arm_env_setup
       run: |
         sudo apt install qemu qemu-user
