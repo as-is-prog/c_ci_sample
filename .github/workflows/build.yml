@@ -23,3 +23,9 @@ jobs:
     - name: build
       run: |
         bash ./build.sh
+    - name: test_env_setup
+      run: |
+        sudo install qemu qemu-user
+    - name: test
+      run: |
+        bash ./exec.sh
