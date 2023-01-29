@@ -1,0 +1,1 @@
+qemu-arm -L /usr/arm-linux-gnueabihf/ ./build/c_ci_sample

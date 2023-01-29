@@ -1,0 +1,25 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: label change test1
+      run: | 
+        pwd
+        ls
+    - name: label change test2
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+    - name: build_env_setup
+      run: |
+        sudo apt install g++-arm-linux-gnueabihf
+    - name: build
+      run: |
+        bash ./build.sh
